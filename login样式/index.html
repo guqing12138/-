@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+    </script>
+    <link href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".show-login-btn").click(function() {
+                $(".login-box").toggleClass("showed");
+            });
+            $(".hide-login-btn").click(function() {
+                $(".login-box").toggleClass("showed");
+            });
+
+        });
+    </script>
+    <div class="show-login-box">
+        <div class="show-login-btn">
+            <i class="fa fa-arrow-circle-right">Show Login Form</i>
+        </div>
+    </div>
+    <div class="login-box">
+        <div class="hide-login-btn">
+            <i class="fa fa-close"></i> </div>
+
+        <form class="login-form" action="index.html" method="POST">
+            <h1>Welcome</h1>
+            <input class="txtb" type="text" name="" placeholder="Username">
+            <input class="txtb" type="password" name="" placeholder="Password">
+            <input class="login-btn" type="submit" name="" value="Login">
+        </form>
+    </div>
+</body>
+
+</html>
